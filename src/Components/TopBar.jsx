@@ -1,12 +1,13 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import netflix from "../assets/netflix.png";
 
-function TopBar() {
+const TopBar = () => {
   return (
     <Navbar expand="lg" bg="dark" variant="dark" className="px-4">
       <Container fluid>
         <Navbar.Brand href="#">
-          <img src="./img/assets/netflix_logo.png" style={{ width: "90px" }} alt="Netflix Logo" />
+          <img src={netflix} style={{ width: "90px" }} alt="Netflix Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
         <Navbar.Collapse id="navbarSupportedContent">
@@ -72,6 +73,6 @@ function TopBar() {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default TopBar;
