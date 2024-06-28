@@ -9,10 +9,10 @@ const Footer = () => {
         <Col xs={12} md={6}>
           <Row>
             <Col className="mb-2">
-              <FaFacebook className="footer-icon me-2" />
-              <FaInstagram className="footer-icon me-2" />
-              <FaTwitter className="footer-icon me-2" />
-              <FaYoutube className="footer-icon" />
+              <FaFacebook className="footer-icon me-2 " style={{ color: "white" }} />
+              <FaInstagram className="footer-icon me-2 " style={{ color: "white" }} />
+              <FaTwitter className="footer-icon me-2 " style={{ color: "white" }} />
+              <FaYoutube className="footer-icon" style={{ color: "white" }} />
             </Col>
           </Row>
           <Row className="row-cols-1 row-cols-sm-2 row-cols-md-4">

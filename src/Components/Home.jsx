@@ -57,6 +57,9 @@ const Home = () => {
           </Col>
         </Row>
         <Gallerie subtitle="Trending Now" ricerca="harry" />
+        <Gallerie subtitle="New Relase" ricerca="avengers" />
+        <Gallerie subtitle="Preview" ricerca="star" />
+        <Gallerie subtitle="Old movies" ricerca="west" />
       </Container>
     </Container>
   );

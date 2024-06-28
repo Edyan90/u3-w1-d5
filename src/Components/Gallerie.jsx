@@ -5,6 +5,7 @@ import CarouselCustom from "./CarouselCustom";
 class Gallerie extends Component {
   state = {
     movies: [],
+    isLoading: true,
   };
   richiestaDati = (e) => {
     fetch("https://www.omdbapi.com/?i=tt3896198&apikey=27c34ce7&s=" + this.props.ricerca)
@@ -17,7 +18,7 @@ class Gallerie extends Component {
       })
       .then((data) => {
         console.log(data);
-        this.setState({ movies: data.Search });
+        this.setState({ movies: data.Search, isLoading: false });
       })
       .catch((err) => alert(err));
   };
@@ -30,7 +31,8 @@ class Gallerie extends Component {
     return (
       <section className="my-3">
         <h4 className="mt-4 mb-2">{this.props.subtitle}</h4>
-        <CarouselCustom movies={movies} />
+
+        <CarouselCustom movies={movies} isLoading={this.state.isLoading} />
       </section>
     );
   }
