@@ -157,7 +157,7 @@ const CarouselCustom = (props) => {
       <Carousel.Item>
         <Row>
           {props.movies.slice(0, 6).map((movie, index) => (
-            <Col sm={4} md={4} lg={4} key={index} className={index >= 3 ? "d-none d-lg-block" : ""}>
+            <Col sm={4} md={4} lg={2} key={index} className={index >= 3 ? "d-none d-lg-block" : ""}>
               <img src={movie.Poster} style={{ height: "310px" }} alt={movie.Title} />
             </Col>
           ))}
@@ -166,12 +166,12 @@ const CarouselCustom = (props) => {
       <Carousel.Item>
         <Row>
           {props.movies.slice(6).map((movie, index) => (
-            <Col sm={4} md={4} lg={4} key={index}>
+            <Col sm={4} md={4} lg={2} key={index}>
               <img src={movie.Poster} style={{ height: "310px" }} alt={movie.Title} />
             </Col>
           ))}
           {props.movies.slice(0, 2).map((movie, index) => (
-            <Col sm={4} md={4} lg={4} key={index}>
+            <Col sm={4} md={4} lg={2} key={index}>
               <img src={movie.Poster} style={{ height: "310px" }} alt={movie.Title} />
             </Col>
           ))}
